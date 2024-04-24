@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    /* --brand: #0a64bc; */
+    --brand: rgb(5 0 255);
+    --border-radius: 20px;
+}
+
+
+body {
+    font-family: Verdana, Arial;
+    background-color: var(--white);
+}
+
+
+img {
+    width: 100%;
+}
+
+ul {
+    text-decoration: none;    
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+.btn {
+    font-weight: 500;
+    padding: 6px 18px;
+    border-radius: var(--border-radius);
+    transition: all 2s ease;
+}
+
+.btn.btn-primary {
+    background-color: var(--brand);
+    border-color: 1px solid var(--brand);
+}
+
+section {
+    padding: 90px 0;
+}
+
+/* hero */
+
+.logo {
+    color: var(--brand);
+}
+
+.hero-row {
+    border-radius: var(--border-radius);
+    color: var(--white);
+}
+
+.hero-row h1 {
+    font-size: 2rem;
+}
+
+/* Review */
+
+.review {
+    position: relative;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.review h3 {
+    margin: 20px 0px;
+}
+
+.review p {
+    margin: 20px 0px 20px 0px;
+}
+
+.review .review-img {
+    margin: auto;
+}
+
+.review-img img {
+    height: 200px;
+}
+
+@media(min-width: 762px) {
+    .review-img .trust {
+        height: 140px;
+        object-fit: contain;
+    }
+}
+
+/* CTA */
+
+.btn.download-btn {
+    background-color: var(--white);
+    color: var(--brand);
+}
